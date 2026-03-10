@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Web Output #2</title>
+</head>
+<body onload="RecordApp.init()">
+
+    <h1>Javascript Web Output #2</h1>
+
+    First Name: &nbsp;&nbsp;&nbsp; <input type="text" id="fName"><br>
+    Middle Name: <input type="text" id="mName"><br>
+    Last Name: &nbsp;&nbsp;&nbsp; <input type="text" id="lName"><br>
+    Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="age"><br><br>
+
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button onclick="RecordApp.add()">Insert</button>
+    <button onclick="RecordApp.clearInputs()">Clear</button>
+
+    <br><br>
+
+    <fieldset>
+        <legend>Records</legend>
+        <div id="displayArea"></div>
+    </fieldset>
+
+    <br>
+
+    <div id="controls" style="display: none;">
+        <button onclick="RecordApp.deleteAll()">Clear Records</button>
+        
+        Sort by: 
+        <select id="sortField" onchange="RecordApp.sort()">
+            <option value="">Please select</option>
+            <option value="fName">First Name</option>
+            <option value="lName">Last Name</option>
+        </select>
+
+        <select id="sortOrder" onchange="RecordApp.sort()">
+            <option value="asc">A - Z</option>
+            <option value="desc">Z - A</option>
+        </select>
+
+        <button onclick="RecordApp.save()">Save to Local Storage</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
