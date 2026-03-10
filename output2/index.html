@@ -7,10 +7,32 @@
 
     <h1>Javascript Web Output #2</h1>
 
-    First Name: &nbsp;&nbsp;&nbsp; <input type="text" id="fName"><br>
-    Middle Name: <input type="text" id="mName"><br>
-    Last Name: &nbsp;&nbsp;&nbsp; <input type="text" id="lName"><br>
-    Age: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="number" id="age"><br><br>
+    <table border="0">
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" id="fName"></td>
+        </tr>
+        <tr>
+            <td>Middle Name:</td>
+            <td><input type="text" id="mName"></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" id="lName"></td>
+        </tr>
+        <tr>
+            <td>Age:</td>
+            <td><input type="number" id="age"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <br>
+                <button onclick="RecordApp.add()">Insert</button>
+                <button onclick="RecordApp.clearInputs()">Clear</button>
+            </td>
+        </tr>
+    </table>
 
     <br>
 
